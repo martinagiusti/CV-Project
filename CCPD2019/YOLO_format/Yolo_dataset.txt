@@ -1,0 +1,21 @@
+here there will be uploaded the dataset using the yolov5 format:
+--YOLO_format
+  |----images
+  |      |----test
+  |            |----img1.jpg
+  |            |----img2.jpg
+  |      |----train
+  |      |----val
+  |      |----ccpd_blur
+  |      |----ccpd_challenge
+  |      |.....
+  |
+  |----labels
+        |----test
+        |       |----img1.txt
+        |       |----img2.txt  
+        |----train
+        |----val
+        |----ccpd_blur
+        |----ccpd_challenge
+        |.....
