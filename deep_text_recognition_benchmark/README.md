@@ -17,7 +17,7 @@ python deep_text_recognition_benchmark/demo.py --image_folder data_test/onlyLP_t
 --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn 
 ```
 
-In particular, the file test_raw.py makes possible making the test analysis without having a dataset using mdb form. For this purpose, the command for doing the inference analysis is:
+test_raw.py makes possible making the test analysis without having a dataset using mdb form. For this purpose, the command for doing the inference analysis is:
 
 ```bash
 python deep_text_recognition_benchmark\test_raw.py --eval_data data_test_split\ccpd_blur\data --label_file data_test_split\ccpd_blur\labels.txt ^
