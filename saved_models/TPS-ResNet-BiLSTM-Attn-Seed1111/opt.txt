@@ -1,0 +1,43 @@
+------------ Options -------------
+exp_name: TPS-ResNet-BiLSTM-Attn-Seed1111
+train_data: train_lmdb
+valid_data: val_lmdb
+manualSeed: 1111
+workers: 0
+batch_size: 48
+num_iter: 10420
+valInterval: 2084
+saved_model: saved_models\TPS-ResNet-BiLSTM-Attn.pth
+FT: False
+adam: False
+lr: 1
+beta1: 0.9
+rho: 0.95
+eps: 1e-08
+grad_clip: 5
+baiduCTC: False
+select_data: ['MJ', 'ST']
+batch_ratio: ['0.5', '0.5']
+total_data_usage_ratio: 1.0
+batch_max_length: 7
+imgH: 32
+imgW: 100
+rgb: False
+character: 0123456789ABCDEFGHIJKLMNPQRSTUVWXYZ皖沪津渝冀晋蒙辽吉黑苏浙京闽赣鲁豫鄂湘粤桂琼川贵云藏陕甘青宁新警学O
+sensitive: False
+PAD: False
+data_filtering_off: True
+Transformation: TPS
+FeatureExtraction: ResNet
+SequenceModeling: BiLSTM
+Prediction: Attn
+num_fiducial: 20
+input_channel: 1
+output_channel: 512
+hidden_size: 256
+is_training: True
+start_time: 2025-07-16 16:17:57
+num_epochs: 5.0016
+num_gpu: 1
+num_class: 72
+---------------------------------------
