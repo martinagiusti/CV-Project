@@ -61,7 +61,7 @@ def benchmark_all_eval(model, criterion, converter, opt, calculate_infer_time=Fa
     total_forward_time = 0
     total_evaluation_data_number = 0
     total_correct_number = 0
-    log = open(f'./test_results/{opt.exp_name}/log_all_evaluation.txt', 'a',encoding='utf-8')
+    log = open(f'./DTRB_results/{opt.exp_name}/log_all_evaluation.txt', 'a',encoding='utf-8')
     dashed_line = '-' * 80
     print(dashed_line)
     log.write(dashed_line + '\n')
@@ -113,7 +113,7 @@ def validation(model, criterion, evaluation_loader, converter, opt):
     infer_time = 0
     valid_loss_avg = Averager()
     folder_name = os.path.basename(os.path.dirname(opt.label_file.rstrip('/')))
-    output_file = open(f'./test_results/{opt.exp_name}/predictions_{folder_name}_{timestamp}.csv', 'w', encoding='utf-8')
+    output_file = open(f'./DTRB_results/{opt.exp_name}/predictions_{folder_name}_{timestamp}.csv', 'w', encoding='utf-8')
     output_file.write('GroundTruth,Prediction,Confidence,Correct\n')
 
     for i, (image_tensors, labels) in enumerate(evaluation_loader):
@@ -247,8 +247,8 @@ def test(opt):
     print('loading pretrained model from %s' % opt.saved_model)
     model.load_state_dict(torch.load(opt.saved_model, map_location=device))
     opt.exp_name = '_'.join(opt.saved_model.split('/')[1:])
-    os.makedirs(f'./test_results/{opt.exp_name}', exist_ok=True)
-    shutil.copy(opt.saved_model, f'./test_results/{opt.exp_name}/')
+    os.makedirs(f'./DTRB_results/{opt.exp_name}', exist_ok=True)
+    shutil.copy(opt.saved_model, f'./DTRB_results/{opt.exp_name}/')
 
     """ setup loss """
     if 'CTC' in opt.Prediction:
@@ -259,7 +259,7 @@ def test(opt):
     """ evaluation """
     model.eval()
     with torch.no_grad():
-        log = open(f'./test_results/{opt.exp_name}/log_evaluation.txt', 'a', encoding='utf-8')
+        log = open(f'./DTRB_results/{opt.exp_name}/log_evaluation.txt', 'a', encoding='utf-8')
 
         AlignCollate_evaluation = AlignCollate(imgH=opt.imgH, imgW=opt.imgW, keep_ratio_with_pad=opt.PAD, is_training=False)
         dataset = FolderDataset(opt.eval_data, opt.label_file)
