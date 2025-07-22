@@ -100,3 +100,60 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
 - csv_splits folder: contains the csv files of each ccpd test folder.
 - deep-text-recognition-benchmarck: copy of the repository [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). There are provided also the modified versions of the files in the repository.
 - yolov5: is the copy of [YOLOv5](https://github.com/ultralytics/yolov5) repository, and inside this folder there is the modified version of val.py.
+
+---
+
+## Notebooks
+
+### 1. **Dataset (CCPD).ipynb**
+- **Operations**: 
+  - Image size, format, color channels, and pixel range inspection.
+  - Organizes informations into CSVs based on folders (e.g., `train.csv`, `ccpd_blur.csv`).
+  - Visualizes images with bounding boxes and annotations.
+
+### 2. **Faster R-CNN (detection).ipynb**
+- **Model**: Faster R-CNN with ResNet50 FPN backbone for license plate detection.
+- **Features**: 
+  - Custom dataset handling, training, evaluation, test.
+  - Model checkpoints saved for further use.
+
+### 3. **Yolov5s (Detection)**
+- **Model**: Yolo v5s for license plate detection.
+- **Features**:
+  - Custom dataset formatted for YOLO.
+  - Model checkpoints saved for further use.
+  - **Configuration Files**:
+    - **`data.yaml`**: This file contains dataset-specific configurations, such as paths to the training and validation images, class names, and other necessary details. It should be placed in the `yolov5/` directory.
+    - **`hyp_ccpd.yaml`**: This file includes custom hyperparameters specific to training on the CCPD dataset. It should be placed in the `data/hyps` directory or as specified in the YOLOv5 repository instructions.
+
+
+### 3. **PDLPR (recognition).ipynb**
+- **Architecture**: The PDLPR model follows the structure described in the paper [A Real‑Time License Plate Detection and Recognition Model in
+Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791). It includes:
+  - **Improved Global Feature Extractor (IGFE)**.
+  - **Encoder**.
+  - **Parallel Decoder**.
+
+- **Features**:
+  - Custom dataset handling, training, evaluation, test.
+  - Model checkpoints saved for further use.
+
+---
+
+## How to Use
+1. Download the dataset from [CCPD GitHub](https://github.com/detectRecog/CCPD).
+2. Ensure dataset is correctly placed in the same directory of the notebooks.
+3. Run notebooks to train and evaluate models.
+4. Use pre-trained weights for testing.
+
+---
+
+## Model Weights and training history
+- Pre-trained weights are available for both detection and recognition tasks.
+  - **Faster RCNN (Detection)**: `best_model_iou.pth`,`checkpoint_full.pth`.
+  - **Yolo v5s (Detection)**: `best.pt`, `last.pt`.
+  - **PDLPR (Recognition)**: `checkpoint_epoch75.pth`, `latest_checkpoint.pth`, `training_history.json`.
+
+
+
+
