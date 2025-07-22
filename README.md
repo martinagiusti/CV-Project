@@ -121,7 +121,8 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
 - **Model**: TPS-ResNet-BiLSTM-Attn modules.
 - **Features**:
   - Custom dataset handling, training, evaluation, test.
-  - Model checkpoints saved for further use in [checkpoints]().
+  - Download the [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark), use the modified scripts attached in [deeo-text-recognition-benchmark folder]().
+  - Model checkpoints saved for further use in [checkpoints](https://github.com/martinagiusti/CV-Project/tree/main/checkpoints).
 
 ### 4. **YOLO_Detection.ipynb**
 - **Model**: Yolo v5s for license plate detection.
