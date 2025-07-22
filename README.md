@@ -117,7 +117,11 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
   - Custom dataset handling, training, evaluation, test.
   - Model checkpoints saved for further use.
 
-### 3. **Yolov5s (Detection)**
+### 3. ** (aggiungi il tuo Marti) (detection).ipynb**
+- **Model**: 
+- **Features**: 
+
+### 4. **Yolov5s (Detection)**
 - **Model**: Yolo v5s for license plate detection.
 - **Features**:
   - Custom dataset formatted for YOLO.
@@ -127,7 +131,7 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
     - **`hyp_ccpd.yaml`**: This file includes custom hyperparameters specific to training on the CCPD dataset. It should be placed in the `data/hyps` directory or as specified in the YOLOv5 repository instructions.
 
 
-### 3. **PDLPR (recognition).ipynb**
+### 5. **PDLPR (recognition).ipynb**
 - **Architecture**: The PDLPR model follows the structure described in the paper [A Real‑Time License Plate Detection and Recognition Model in
 Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791). It includes:
   - **Improved Global Feature Extractor (IGFE)**.
