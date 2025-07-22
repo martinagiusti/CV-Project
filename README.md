@@ -121,7 +121,7 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
 - **Model**: TPS-ResNet-BiLSTM-Attn modules.
 - **Features**:
   - Custom dataset handling, training, evaluation, test.
-  - Download the [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark), use the modified scripts attached in [deeo-text-recognition-benchmark folder]().
+  - Download the [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark), use the modified scripts attached in [deep-text-recognition-benchmark folder](https://github.com/martinagiusti/CV-Project/tree/main/deep_text_recognition_benchmark).
   - Model checkpoints saved for further use in [checkpoints](https://github.com/martinagiusti/CV-Project/tree/main/checkpoints).
 
 ### 4. **YOLO_Detection.ipynb**
