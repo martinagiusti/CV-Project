@@ -1,0 +1,8 @@
+path: ../CCPD2019/YOLO_format
+
+train: images/train
+val: images/val
+
+nc: 1
+names:
+    0: license plate
