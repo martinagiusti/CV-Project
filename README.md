@@ -25,7 +25,7 @@ CCPD2019
 The validation and train dataset are composed of images in ccpd_base, while the test set is build up by all the other folders.
 
 # About the repository:
-The notebook [YOLOv5_detection.ipynb]() is dedicated to the YOLOv5s network development and training.
+The notebook [YOLOv5_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/YOLOv5_detection.ipynb) is dedicated to the YOLOv5s network development and training.
 The notebook \mettere_nome is about the PDLPR network, taking as example the proposal on \metttere_link_paper from the network structure point of view.
 The notebook \mettere_nome deals with Faster-R-CNN network development.
 The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/STAR-Net_recognition.ipynb) is about STAR-Net whose structure is taken from [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark).
