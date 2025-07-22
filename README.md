@@ -105,13 +105,13 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
 
 ## Notebooks
 
-### 1. **Dataset (CCPD).ipynb**
+### 1. **Dataset_CCPD.ipynb**
 - **Operations**: 
   - Image size, format, color channels, and pixel range inspection.
   - Organizes informations into CSVs based on folders (e.g., `train.csv`, `ccpd_blur.csv`).
   - Visualizes images with bounding boxes and annotations.
 
-### 2. **Faster R-CNN (detection).ipynb**
+### 2. **Faster RCNN_detection.ipynb**
 - **Model**: Faster R-CNN with ResNet50 FPN backbone for license plate detection.
 - **Features**: 
   - Custom dataset handling, training, evaluation, test.
@@ -121,7 +121,7 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
 - **Model**: 
 - **Features**: 
 
-### 4. **Yolov5s (Detection)**
+### 4. **YOLO_Detection.ipynb**
 - **Model**: Yolo v5s for license plate detection.
 - **Features**:
   - Custom dataset formatted for YOLO.
@@ -131,7 +131,7 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
     - **`hyp_ccpd.yaml`**: This file includes custom hyperparameters specific to training on the CCPD dataset. It should be placed in the `data/hyps` directory or as specified in the YOLOv5 repository instructions.
 
 
-### 5. **PDLPR (recognition).ipynb**
+### 5. **PDLPR_recognition.ipynb**
 - **Architecture**: The PDLPR model follows the structure described in the paper [A Real‑Time License Plate Detection and Recognition Model in
 Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791). It includes:
   - **Improved Global Feature Extractor (IGFE)**.
