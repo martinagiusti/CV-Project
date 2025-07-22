@@ -96,7 +96,7 @@ The validation and train dataset are composed of images in ccpd_base, while the 
 The notebook [YOLO_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/YOLO_detection.ipynb) is dedicated to the YOLOv5s network development and training.
 The notebook [PDLPR_recognition.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/PDLPR_recognition.ipynb) is about the PDLPR network, taking as example the proposal on [A Real‑Time License Plate Detection and Recognition Model in
 Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791) from the network structure point of view.
-The notebook [Faster_RCNN_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/Faster_RCNN_detection.ipynb) deals with Faster-R-CNN network development.
+The notebook [FasterRCNN_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/FasterRCNN_detection.ipynb) deals with Faster-R-CNN network development.
 The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/STAR-Net_recognition.ipynb) is about STAR-Net whose structure is taken from [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark).
 
 - deep-text-recognition-benchmarck: copy of the repository [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). There are provided also the modified versions of the files in the repository.
