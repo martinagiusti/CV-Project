@@ -117,9 +117,11 @@ The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Pr
   - Custom dataset handling, training, evaluation, test.
   - Model checkpoints saved for further use.
 
-### 3. ** (aggiungi il tuo Marti) (detection).ipynb**
-- **Model**: 
-- **Features**: 
+### 3. **STAR-Net**
+- **Model**: TPS-ResNet-BiLSTM-Attn modules.
+- **Features**:
+  - Custom dataset handling, training, evaluation, test.
+  - Model checkpoints saved for further use in [checkpoints]().
 
 ### 4. **YOLO_Detection.ipynb**
 - **Model**: Yolo v5s for license plate detection.
