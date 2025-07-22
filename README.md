@@ -31,9 +31,5 @@ The notebook \mettere_nome deals with Faster-R-CNN network development.
 The notebook \mettere_nome is about STAR-Net whose structure is taken from [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark).
 
 - csv_splits folder: contains the csv files of each ccpd test folder.
-- data_test, data_test_split: dataset organization for STAR-Net inference evaluation.
-- data_train, data_val: train and validation sets prepared for creating the lmdb datasets versions, in order to along with the STAR-Net data format.
-- deep-text-recognition-benchmarck: copy of the repository [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark), there are inside also the modified versions of the files.
-- DTRB-results: results of STAR-Net (here called: TPS-ResNet-BiLSTM-Attn-Seed1111) inference on the different test folders.
-- train_lmdb,val_lmdb: folcers containing the train and validation sets with data in mdb form.
-- yolov5: is the copy of [YOLOv5](https://github.com/ultralytics/yolov5) repository, and inside this folder there are contained the modified files.
+- deep-text-recognition-benchmarck: copy of the repository [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). There are provided also the modified versions of the files in the repository.
+- yolov5: is the copy of [YOLOv5](https://github.com/ultralytics/yolov5) repository, and inside this folder there is the modified version of val.py.
