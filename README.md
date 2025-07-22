@@ -1,8 +1,9 @@
 # CV-Project
 
 The aim of the project is to compare the different performance in two different License Plate detection and recognition pipeplines in order to recognize Chinese License Plates.
-The different pipelines are
-1. YOLOv5 + PDLPR, proposed by \mettere la citazione del paper;
+The different pipelines are:
+1. YOLOv5 + PDLPR, proposed in [A Real‑Time License Plate Detection and Recognition Model in
+Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791);
 2. Fater-R-CNN + STAR-Net.
 
 The dataset used is the Chinese City Parking Dataset, in 2019 version, which can be downloaded following the instruction at the [CCPD](https://github.com/detectRecog/CCPD) repository. 
@@ -92,12 +93,12 @@ CCPD2019
 The validation and train dataset are composed of images in ccpd_base, while the test set is build up by all the other folders.
 
 # About the repository:
-The notebook [YOLOv5_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/YOLOv5_detection.ipynb) is dedicated to the YOLOv5s network development and training.
-The notebook \mettere_nome is about the PDLPR network, taking as example the proposal on \metttere_link_paper from the network structure point of view.
-The notebook \mettere_nome deals with Faster-R-CNN network development.
+The notebook [YOLO_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/YOLO_detection.ipynb) is dedicated to the YOLOv5s network development and training.
+The notebook [PDLPR_recognition.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/PDLPR_recognition.ipynb) is about the PDLPR network, taking as example the proposal on [A Real‑Time License Plate Detection and Recognition Model in
+Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791) from the network structure point of view.
+The notebook [Faster RCNN_detection.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/Faster RCNN_detection) deals with Faster-R-CNN network development.
 The notebook [STAR-Net_recognition.ipynb](https://github.com/martinagiusti/CV-Project/blob/main/STAR-Net_recognition.ipynb) is about STAR-Net whose structure is taken from [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark).
 
-- csv_splits folder: contains the csv files of each ccpd test folder.
 - deep-text-recognition-benchmarck: copy of the repository [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark). There are provided also the modified versions of the files in the repository.
 - yolov5: is the copy of [YOLOv5](https://github.com/ultralytics/yolov5) repository, and inside this folder there is the modified version of val.py.
 
