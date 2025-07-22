@@ -159,6 +159,7 @@ Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791). It includes:
 ## Model Weights and training history
 - Pre-trained weights are available for both detection and recognition tasks.
   - **Faster RCNN (Detection)**: `best_model_iou.pth`,`checkpoint_full.pth`.
+  - **STAR-Net(Recognition)**: `best_accuracy.pth`, `last_iter.pth`.
   - **Yolo v5s (Detection)**: `best.pt`, `last.pt`.
   - **PDLPR (Recognition)**: `checkpoint_epoch75.pth`, `latest_checkpoint.pth`, `training_history.json`.
 
