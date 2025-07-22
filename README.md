@@ -1,8 +1,9 @@
 # CV-Project
 
 The aim of the project is to compare the different performance in two different License Plate detection and recognition pipeplines in order to recognize Chinese License Plates.
-The different pipelines are
-1. YOLOv5 + PDLPR, proposed by \mettere la citazione del paper;
+The different pipelines are:
+1. YOLOv5 + PDLPR, proposed in [A Real‑Time License Plate Detection and Recognition Model in
+Unconstrained Scenarios](https://www.mdpi.com/1424-8220/24/9/2791);
 2. Fater-R-CNN + STAR-Net.
 
 The dataset used is the Chinese City Parking Dataset, in 2019 version, which can be downloaded following the instruction at the [CCPD](https://github.com/detectRecog/CCPD) repository. 
